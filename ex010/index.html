@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+
+    <p>Você pode usar o meu <a href="https://github.com/DevGuiBan"> repositório público no GitHub</a></p>
+
+    <!-- 'target="_black"' é utilizado para levar para links externos abrindo novas abas impedido que o seu site seja sobreposto ao link que você abriu-->
+
+    <!-- 'rel="external"' está referênciando que é um site externo mostrando ao buscador que seu site é responsa assim como 'rel="next"' que informa que você está indo para outra página mas do seu próprio site assim que 'target="_self"' que vai manter o redirecionamento sem criar outra aba. -->
+
+    <p>Você pode usar o meu <a href="https://github.com/DevGuiBan" target="_blank" rel="external"> repositório público no GitHub</a> em outra aba</p>
+
+    <h1>Usando Links Internos</h1>
+
+    <p><a href="pg002.html" rel="next" target="_self">Esta é a segunda página interna do site</a></p>
+
+    <h1>Links para download</h1>
+
+    <!-- type serve para dizer ao navegador como ele vai lidar com o tipo de arquivo em download arquivos em pdf por exemplo ao invés de serem baixados são abertos no navegador enquanto .zip são baixados automaticamente. Buscar como se deve colocar a anotação dentro do type para cada tipo de arquivo em  -->
+
+    <ul>
+        <li><a href="livro/O Programador Pragmático - Autor (Andrew Hunt e David Thomas).pdf" download="O Programador Pragmático - Autor (Andrew Hunt e David Thomas).pdf" type="application/pdf" target="_blank">Baixar livro em PDF</a></li>
+        <li><a href="livro/O Programador Pragmático - Autor (Andrew Hunt e David Thomas).zip" download="O Programador Pragmático - Autor (Andrew Hunt e David Thomas).zip" type="application/zip">Baixar livro em ZIP</a></li>
+    </ul>
+</body>
+</html>

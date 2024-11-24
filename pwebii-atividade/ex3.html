@@ -1,0 +1,27 @@
+<!-- Crie uma calculadora simples que pergunte ao usuário dois números e, em seguida, a operação que ele deseja realizar (soma, subtração, multiplicação ou divisão). O programa deve imprimir o resultado da operação. -->
+
+<script>
+    let num1 = parseFloat(prompt("Primeiro número"));
+    let num2 = parseFloat(prompt("Segundo número"));
+    let operacao = prompt("Escolha a operação");
+    let result;
+
+    if(operacao == 1) {
+        result = num1 + num2;
+    } else if (operacao == 2) {
+        result = num1 - num2;
+    } else if (operacao == 3) {
+        result = num1 * num2; 
+    } else if (operacao == 4) {
+        if(num2 == 0) {
+            result = "Erro divisão por zero!!!";
+        } else {
+            result = num1 / num2;
+        }
+    } else {
+        result = "Erro na operação"
+    }
+
+    alert(result)
+    console.log("O resultado é -> " + (result))
+</script>

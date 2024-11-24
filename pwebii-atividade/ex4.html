@@ -1,0 +1,26 @@
+<!--Crie uma função que recebe uma string como parâmetro e retorna a quantidade de vogais (a, e, i, o, u) na string.-->
+
+<script>
+
+    function contadorDeVogais (str) {
+        let vogais = "aeiouAEIOU";
+        let contador = 0;
+
+        for(let char of str) {
+            if(vogais.includes(char)) {
+                contador++;
+            }
+        }
+
+        return contador;
+    }
+
+
+    let palavra = prompt("Digite uma palavra");
+
+    let quantidadeVogais = contadorDeVogais(palavra)
+
+    alert(quantidadeVogais)
+    console.log("Quantidade de vogais = " + (quantidadeVogais))
+
+</script>
